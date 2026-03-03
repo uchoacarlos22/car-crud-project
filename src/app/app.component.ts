@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CarrosComponent } from './carros/carros.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  standalone: true,
+  imports: [CarrosComponent],
+  template: `<app-carros />`,
+  styles: []
 })
-export class AppComponent {
-  title = 'apiRestConection';
-}
+export class AppComponent {}
